@@ -1,6 +1,6 @@
 with source as (
 
-    select * from dbt_achen.order_items_upload
+    select * from {{ref('order_items_upload')}}
     
 ),
 

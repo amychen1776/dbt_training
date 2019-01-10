@@ -1,12 +1,12 @@
 with source as (
 
-    select * from dbt_achen.customers_upload
+        select * from {{ref('customers_upload')}}
     
 ),
 
 stg_customers as (
 
-    select
+        select
        
        --ids   
        id as customer_id,                
