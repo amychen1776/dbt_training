@@ -13,7 +13,7 @@ renamed as (
 
     select
         customer_id,
-        datediff(month, order_date, previous_order_date) as months_since_prior_order
+        datediff(month, previous_order_date, order_date) as months_since_prior_order
         
     from customer_reorders
  )
