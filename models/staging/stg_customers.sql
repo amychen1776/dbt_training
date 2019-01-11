@@ -1,12 +1,12 @@
 with source as (
 
-        select * from {{ref('customers_upload')}}
+    select * from {{ref('customers_upload')}}
     
 ),
 
 stg_customers as (
 
-        select
+    select
        
        --ids   
        id as customer_id,                
@@ -22,7 +22,7 @@ stg_customers as (
        created_at 
         
         
-    from source
+     from source
 
 )
 
