@@ -1,5 +1,5 @@
 
-name: amy_trainingproject
+name: 'amy_trainingproject'
 version: '1.0'
 profile: amy_trainingproject
 source-paths: ["models"]

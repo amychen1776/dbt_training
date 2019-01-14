@@ -1,8 +1,3 @@
-{{
-    config(
-        schema='staging'
-    )
-}}
 with source as (
 
     select * from {{ ref('orders_upload') }}

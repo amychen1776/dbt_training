@@ -14,12 +14,16 @@ stg_customers as (
        first_name,        
        last_name,        
        gender,
+       {{ dbt_utils.surrogate_key('id', 'created_at') }} as unique_id,
        
        --marketing            
        accepts_marketing,
        
        --dates
-       created_at 
+       created_at
+       
+       
+       
         
         
      from source
